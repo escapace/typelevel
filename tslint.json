@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "tslint-config-escapace"
+  ],
+  "rules": {
+    "function-name": false,
+    "no-any": false
+  }
+}

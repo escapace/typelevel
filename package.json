@@ -1,0 +1,71 @@
+{
+  "name": "@escapace/typelevel",
+  "version": "0.1.0",
+  "description": "typelevel TypeScript library",
+  "keywords": [
+    "TypeScript"
+  ],
+  "typings": "index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "hkt.d.ts",
+    "index.d.ts",
+    "typelevel"
+  ],
+  "bugs": "https://github.com/escapace/typelevel/issues",
+  "author": "escapace <opensource@escapace.com>",
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/escapace/typelevel",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=9.0.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts'",
+    "build": "rimraf index.d.ts hkt.d.ts typelevel && recce build -e src/index.ts && rimraf lib/cjs lib/esm lib/umd && mv lib/types/* .",
+    "test:travis": "npm run lint && npm run test",
+    "test:types": "tsc --noEmit && dtslint --expectOnly --localTs node_modules/typescript/lib test",
+    "test": "npm run typecheck ; npm run test:types"
+  },
+  "lint-staged": {
+    "{src,test}/**/*.ts": [
+      "tslint --exclude 'index.d.ts' --exclude 'hkt.d.ts' --exclude 'typelevel/**/*.d.ts' --exclude 'test/**/*' --project tsconfig.json --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "{src,test}/**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.0.0",
+    "@commitlint/config-conventional": "8.0.0",
+    "@types/node": "12.0.5",
+    "chai": "4.2.0",
+    "cross-env": "5.2.0",
+    "dtslint": "^0.7.7",
+    "husky": "2.4.0",
+    "lint-staged": "8.2.0",
+    "mocha": "6.1.4",
+    "prettier": "1.17.1",
+    "rimraf": "2.6.3",
+    "ts-node": "8.2.0",
+    "tslint": "5.17.0",
+    "tslint-config-escapace": "1.5.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-standard": "8.0.1",
+    "tslint-microsoft-contrib": "6.2.0",
+    "typescript": "^3.5.1"
+  }
+}
