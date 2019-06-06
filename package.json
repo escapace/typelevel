@@ -28,7 +28,7 @@
     "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts'",
     "build": "rimraf index.d.ts hkt.d.ts typelevel && recce build -e src/index.ts && rimraf lib/cjs lib/esm lib/umd && mv lib/types/* .",
     "test:travis": "npm run lint && npm run test",
-    "test:types": "tsc --noEmit && dtslint --expectOnly --localTs node_modules/typescript/lib test",
+    "test:types": "dtslint --expectOnly --localTs node_modules/typescript/lib test",
     "test": "npm run typecheck ; npm run test:types"
   },
   "lint-staged": {
