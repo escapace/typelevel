@@ -3,6 +3,7 @@ before_install:
 - npm install -g recce
 install: npm install
 script:
+- mkdir -p ~/.dts/perf
 - "./manage trust-escapace"
 - "./manage ci"
 language: node_js
