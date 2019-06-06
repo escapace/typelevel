@@ -3,8 +3,8 @@ before_install:
 - npm install -g recce
 install: npm install
 script:
-- ./manage trust-escapace
-- ./manage ci
+- "./manage trust-escapace"
+- "./manage ci"
 language: node_js
 branches:
   only:
@@ -38,3 +38,6 @@ notifications:
   email: false
 node_js:
 - node
+env:
+  global:
+    secure: GsTtEPnOYaVtuVONDo06TRWesYDEGa4UEjVHRzp9JsG4liOjJe6g6CPLEcboteAkZTR6mBNz8YZj51jz6QKc8Vt6Hpm8WraoTo9ohuWodPUC4t+v4if9qKVEDH+m2euyAVv7X+3R65a0wsO/N6L0dkblajvASHozbRYaVb0wYeb/LOFBqAZ/m2VRa/fzQffmq0Sg7UxBywFmz9ByGhR0ijHQmlturRF99DUDz0h3A+QCAKtwCp/aRJegKEu0RK+GcZJx3sqFAhL0LVWVxzw/ODixgBgBM+e7jrfF40npOw5NpqIfFNS/kLh4w8Tkjrqq3p1pApLqHlqjlqZCtNi2o4ovk1tAdKB0hx/veoqAdkuhRFCvMM8m2Nh3LiWchc1GQH2+HVg2Z7rsZWJiFMgMnjTwdebmgnT1DvgUZDkVKcM2MiTiiY4KLJHYBJNhmHP1180jPTih3jGbM1Lef/ya0KMzPQE6RMlgRVMLZ5owEC1pYkoEZ7VFC3dxetuccx9+jiTrEKhBilYURuOovKJFMheoJX7D/dAX4AkpVBwfjfXyafvzkDl+6Bk8xJ5mrl1gE7RIrK71lXqLdKp7zjcImpwxhNzEWLZR2nQEPJng6QGsRS8Xw9INJLwHwPpSZS5iatt13bwI2p04AN9sGAtBzp73XfwcEasqulQMYxwfASI=
