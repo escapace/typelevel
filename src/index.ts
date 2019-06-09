@@ -1,3 +1,4 @@
-import * as I from './typelevel'
+import * as TYPELEVEL from './typelevel'
 
-export { I as TL }
+export { TYPELEVEL as TL }
+export default TYPELEVEL
