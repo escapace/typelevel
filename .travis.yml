@@ -1,6 +1,11 @@
+dist: xenial
+addons:
+  apt:
+    packages:
+    - dirmngr
 before_install:
-- npm install -g npm
-- npm install -g recce
+- git config --global gpg.program gpg2
+- npm install -g npm recce
 install: npm install
 script:
 - mkdir -p ~/.dts/perf
