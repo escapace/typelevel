@@ -23,5 +23,5 @@
       "@escapace/interface": ["../src"]
     }
   },
-  "include": ["./"]
+  "include": ["*.ts", "../src/**/*.ts"]
 }
