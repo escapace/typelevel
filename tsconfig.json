@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
@@ -16,10 +15,8 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
-    "outDir": "./lib",
     "preserveConstEnums": true,
     "pretty": true,
-    "rootDirs": ["./src"],
     "strict": true,
     "target": "es2017",
     "typeRoots": ["node_modules/@types"]
