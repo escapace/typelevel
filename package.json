@@ -12,7 +12,7 @@
     "cross-env": "5.2.0",
     "dtslint": "0.8.0",
     "husky": "2.7.0",
-    "lint-staged": "8.2.1",
+    "lint-staged": "9.1.0",
     "mocha": "6.1.4",
     "prettier": "1.18.2",
     "rimraf": "2.6.3",
