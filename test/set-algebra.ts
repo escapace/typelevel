@@ -38,3 +38,15 @@ export type F3 = TL.Assert.False<TL.Contains<'3', '3' | '4'>>
 
 // $ExpectType "1"
 export type F4 = TL.Assert.True<TL.Contains<'3', '3'>>
+
+// $ExpectType "1"
+export type G1 = TL.Has<'a' | 'b', 'a' | 'b' | 'c'>
+
+// $ExpectType "1"
+export type G2 = TL.Has<'b', 'a' | 'b' | 'c'>
+
+// $ExpectType "0"
+export type G3 = TL.Has<'d' | 'f', 'a' | 'b' | 'c'>
+
+// $ExpectType "1"
+export type G4 = TL.Has<'c' | 'f', 'a' | 'b' | 'c'>
