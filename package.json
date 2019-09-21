@@ -5,8 +5,8 @@
   "author": "escapace <opensource@escapace.com>",
   "bugs": "https://github.com/escapace/typelevel/issues",
   "devDependencies": {
-    "@commitlint/cli": "8.1.0",
-    "@commitlint/config-conventional": "8.1.0",
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
     "@types/node": "12.7.5",
     "chai": "4.2.0",
     "cross-env": "5.2.1",
