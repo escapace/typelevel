@@ -7,23 +7,23 @@
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
-    "@types/node": "12.11.7",
+    "@types/node": "12.12.14",
     "chai": "4.2.0",
     "cross-env": "6.0.3",
-    "dtslint": "2.0.0",
-    "husky": "3.0.9",
-    "lint-staged": "9.4.2",
+    "dtslint": "2.0.2",
+    "husky": "3.1.0",
+    "lint-staged": "9.5.0",
     "mocha": "6.2.2",
-    "prettier": "1.18.2",
+    "prettier": "1.19.1",
     "rimraf": "3.0.0",
-    "semantic-release": "15.13.27",
+    "semantic-release": "15.13.31",
     "syncpack": "4.5.4",
-    "tslint": "5.20.0",
+    "tslint": "5.20.1",
     "tslint-config-escapace": "1.6.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-config-standard": "9.0.0",
     "tslint-microsoft-contrib": "6.2.0",
-    "typescript": "3.6.4"
+    "typescript": "3.7.2"
   },
   "engines": {
     "node": ">=10.16.0"
