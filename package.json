@@ -16,7 +16,7 @@
     "mocha": "6.2.2",
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
-    "semantic-release": "15.14.0",
+    "semantic-release": "16.0.3",
     "syncpack": "4.5.5",
     "tslint": "5.20.1",
     "tslint-config-escapace": "1.6.0",
