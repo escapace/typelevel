@@ -7,22 +7,30 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
-    "@types/node": "12.12.17",
+    "@types/node": "13.5.0",
+    "@typescript-eslint/eslint-plugin": "2.3.3",
+    "@typescript-eslint/parser": "2.3.3",
     "chai": "4.2.0",
-    "cross-env": "6.0.3",
+    "cross-env": "7.0.0",
     "dtslint": "2.0.5",
+    "eslint": "6.5.1",
+    "eslint-config-escapace": "2.0.3",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-config-standard-with-typescript": "10.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsdoc": "15.10.0",
+    "eslint-plugin-no-null": "1.0.2",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
     "husky": "4.2.1",
-    "lint-staged": "9.5.0",
-    "mocha": "6.2.2",
+    "lint-staged": "10.0.2",
+    "mocha": "7.0.1",
     "prettier": "1.19.1",
     "rimraf": "3.0.0",
-    "semantic-release": "15.14.0",
+    "semantic-release": "16.0.3",
     "syncpack": "4.5.5",
-    "tslint": "5.20.1",
-    "tslint-config-escapace": "1.6.0",
-    "tslint-config-prettier": "1.18.0",
-    "tslint-config-standard": "9.0.0",
-    "tslint-microsoft-contrib": "6.2.0",
     "typescript": "3.7.5"
   },
   "engines": {
@@ -49,23 +57,21 @@
   "lint-staged": {
     "package.json": [
       "syncpack-format --source",
-      "syncpack-set-semver-ranges --dev --source",
-      "git add"
+      "syncpack-set-semver-ranges --dev --source"
     ],
     "{src,test}/**/*.ts": [
-      "tslint --exclude 'index.d.ts' --exclude 'hkt.d.ts' --exclude 'typelevel/**/*.d.ts' --exclude 'test/**/*' --project test/tsconfig.json --fix",
-      "prettier --write",
-      "git add"
+      "eslint --fix",
+      "prettier --write"
     ],
     "{src,test}/**/*.js": [
-      "prettier --write",
-      "git add"
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "repository": "escapace/typelevel",
   "scripts": {
     "build": "rimraf index.d.ts hkt.d.ts typelevel && recce build -e src/index.ts -m esm && rimraf lib/cjs lib/esm lib/umd && mv lib/types/* .",
-    "lint": "tslint --project test/tsconfig.json -t codeFrame 'src/**/*.ts'",
+    "lint": "eslint 'src/**/*.ts'",
     "test": "dtslint --expectOnly --localTs node_modules/typescript/lib test",
     "typecheck": "tsc -p test/tsconfig.json --noEmit"
   },

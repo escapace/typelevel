@@ -3,9 +3,9 @@ import { False, True } from '../boolean-algebra/values'
 /**
  * Asserts strict equality of A and B.
  */
-export type Equal<A, B> = (<T>() => T extends A ? 1 : 2) extends (<
+export type Equal<A, B> = (<T>() => T extends A ? 1 : 2) extends <
   T
->() => T extends B ? 1 : 2)
+>() => T extends B ? 1 : 2
   ? True
   : False
 

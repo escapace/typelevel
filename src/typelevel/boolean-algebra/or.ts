@@ -5,4 +5,6 @@ import { False, True } from './values'
  */
 export type Or<A extends True | False, B extends True | False> = A extends True
   ? True
-  : (B extends True ? True : False)
+  : B extends True
+  ? True
+  : False
