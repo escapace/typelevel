@@ -70,7 +70,7 @@
   },
   "repository": "escapace/typelevel",
   "scripts": {
-    "build": "rimraf index.d.ts hkt.d.ts typelevel && recce build -e src/index.ts -m esm && rimraf lib/cjs lib/esm lib/umd && mv lib/types/* .",
+    "build": "rimraf index.d.ts hkt.d.ts typelevel && npx recce build -e src/index.ts -m esm && rimraf lib/cjs lib/esm lib/umd && mv lib/types/* .",
     "lint": "eslint 'src/**/*.ts'",
     "test": "dtslint --expectOnly --localTs node_modules/typescript/lib test",
     "typecheck": "tsc -p test/tsconfig.json --noEmit"
