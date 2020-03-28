@@ -7,7 +7,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
-    "@types/node": "13.9.2",
+    "@types/node": "13.9.5",
     "@typescript-eslint/eslint-plugin": "2.24.0",
     "@typescript-eslint/parser": "2.24.0",
     "chai": "4.2.0",
