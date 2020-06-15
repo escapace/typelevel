@@ -1,7 +1,5 @@
 name: Release
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the master branch
   schedule:
     - cron: '0 16 * * 2'
   repository_dispatch:
