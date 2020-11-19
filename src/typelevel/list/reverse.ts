@@ -1,5 +1,5 @@
 import { Tail } from './tail'
-import { Cons } from './cons'
+import { Cons } from './prepend'
 import { Head } from './head'
 
 export type Reverse<L extends any[], X extends any[] = []> = {

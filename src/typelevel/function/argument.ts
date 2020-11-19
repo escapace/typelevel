@@ -1,4 +1,4 @@
-import { Cons } from '../array/cons'
+import { Cons } from '../list/prepend'
 
 /**
  * Get the N-th argument of a function.

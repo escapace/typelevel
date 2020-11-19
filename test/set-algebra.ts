@@ -1,4 +1,4 @@
-import { TL } from '@escapace/interface'
+import TL from '@escapace/typelevel'
 
 // $ExpectType "1"
 export type A1 = TL.Equal<TL.Union<'1', '2' | '3'>, '1' | '2' | '3'>
