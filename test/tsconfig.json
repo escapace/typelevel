@@ -18,8 +18,8 @@
     "strict": true,
     "target": "es2017",
     "paths": {
-      "@escapace/interface": ["../src"]
+      "@escapace/typelevel": ["../src"]
     }
   },
-  "include": ["*.ts", "../src/**/*.ts"]
+  "include": ["./", "../src"]
 }

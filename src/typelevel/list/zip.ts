@@ -1,10 +1,10 @@
 import { Tail } from './tail'
 import { Reverse } from './reverse'
 import { Head } from './head'
-import { Cons } from './cons'
+import { Cons } from './prepend'
 
 /**
- * Creates an tuple of grouped elements, the first of which contains the first
+ * Creates an list of grouped elements, the first of which contains the first
  * elements of A and B, the second of which contains the second elements
  * of A and B, and so on.
  */

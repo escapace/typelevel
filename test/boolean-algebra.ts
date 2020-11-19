@@ -1,4 +1,4 @@
-import { TL } from '@escapace/interface'
+import TL from '@escapace/typelevel'
 
 // $ExpectType "0"
 export type A1 = TL.And<TL.False, TL.False>

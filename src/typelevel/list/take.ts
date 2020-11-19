@@ -1,10 +1,10 @@
 import { Tail } from './tail'
 import { Reverse } from './reverse'
 import { Head } from './head'
-import { Cons } from './cons'
+import { Cons } from './prepend'
 
 /**
- * Returns a slice of tuple T with N elements taken from the beginning.
+ * Returns a slice of list T with N elements taken from the beginning.
  */
 export type Take<N extends number, T extends any[], R extends any[] = []> = {
   0: Reverse<R>

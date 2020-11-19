@@ -1,10 +1,10 @@
 import { Tail } from './tail'
 import { Reverse } from './reverse'
 import { Head } from './head'
-import { Cons } from './cons'
+import { Cons } from './prepend'
 
 /**
- * Flattens tuple a single level deep.
+ * Flattens list a single level deep.
  */
 export type Flatten<
   T extends any[][],

@@ -6,7 +6,7 @@ export * from './boolean-algebra'
 export * from './set-algebra'
 export * from './type'
 export * from './function'
-export * from './array'
+export * from './list'
 export * from './object'
 
 export { Is, Assert, To }

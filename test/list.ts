@@ -1,4 +1,4 @@
-import { TL } from '@escapace/interface'
+import TL from '@escapace/typelevel'
 
 // $ExpectType "1"
 export type A1 = TL.Equal<TL.Head<[1]>, 1>
@@ -23,16 +23,25 @@ export type C1 = TL.Equal<TL.Last<[1]>, 1>
 // $ExpectType "1"
 export type C2 = TL.Equal<TL.Last<[1, 2, 3]>, 3>
 // $ExpectType "1"
-export type C3 = TL.Equal<TL.Last<[1, 2, 3], null>, 3>
+export type C3 = TL.Equal<TL.Last<[1, 2, 3]>, 3>
 // $ExpectType "1"
 export type C4 = TL.Equal<TL.Last<[]>, never>
 // $ExpectType "1"
-export type C5 = TL.Equal<TL.Last<[], null>, null>
+export type C5 = TL.Equal<TL.Last<[undefined]>, undefined>
+// // $ExpectType "1"
+export type C6 = TL.Equal<TL.Last<Array<number>>, number>
+// $ExpectType "1"
+export type C7 = TL.Equal<TL.First<[]>, never>
 
 // $ExpectType "1"
-export type D1 = TL.Equal<TL.Cons<1, []>, [1]>
+export type D1 = TL.Equal<TL.Append<1, [4]>, [4, 1]>
 // $ExpectType "1"
-export type D2 = TL.Equal<TL.Cons<1, [2, 3]>, [1, 2, 3]>
+export type D2 = TL.Equal<TL.Append<1, [2, 3]>, [2, 3, 1]>
+
+// $ExpectType "1"
+export type D3 = TL.Equal<TL.Prepend<1, []>, [1]>
+// $ExpectType "1"
+export type D4 = TL.Equal<TL.Prepend<1, [2, 3]>, [1, 2, 3]>
 
 // $ExpectType "1"
 export type E1 = TL.Equal<TL.Reverse<[]>, []>
@@ -108,6 +117,9 @@ export type K6 = TL.Equal<TL.Flatten<[[1, 2], [3, 4]]>, [1, 2, 3, 4]>
 export type K7 = TL.Equal<TL.Flatten<[[1, 2], [], [3, 4]]>, [1, 2, 3, 4]>
 // $ExpectType "1"
 export type K8 = TL.Equal<TL.Flatten<[[1, 2], [], [3, 4]]>, [1, 2, 3, 4]>
+
+// // $ExpectType "1"
+// export type K9 = TL.Equal<TL.Flatten<string[][][]>, string[]>
 
 // $ExpectType "1"
 export type L1 = TL.Equal<TL.Repeat<1, 0>, []>

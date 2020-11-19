@@ -1,9 +1,9 @@
 import { Tail } from './tail'
 import { Head } from './head'
-import { Cons } from './cons'
+import { Cons } from './prepend'
 
 /**
- * Creates a slice of tuple T with N elements dropped from the beginning.
+ * Creates a slice of list T with N elements dropped from the beginning.
  */
 export type Drop<N extends number, T extends any[], R extends any[] = []> = {
   0: T
