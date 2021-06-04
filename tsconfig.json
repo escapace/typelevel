@@ -1,25 +1,32 @@
 {
   "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "declaration": true,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
+    "declarationMap": false,
     "esModuleInterop": true,
-    "skipLibCheck": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
-    "importHelpers": true,
+    "importHelpers": false,
     "lib": ["es2015", "es2015.promise", "es2016", "es2017", "esnext"],
     "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
-    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "preserveConstEnums": true,
+    "noUnusedParameters": true,
     "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
     "strict": true,
     "target": "es2017",
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "useDefineForClassFields": true,
+    "paths": {
+      "@escapace/typelevel": ["./src"]
+    }
   },
   "include": ["./src/**/*"]
 }
