@@ -74,10 +74,6 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: pnpm release
-        if: needs.context.outputs.environment == 'production'
-        run: |
-          pnpm run release ${{ needs.context.outputs.version }}
       - name: github release
         if: needs.context.outputs.environment == 'production'
         run: |
