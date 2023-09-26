@@ -42,7 +42,7 @@
   "homepage": "https://github.com/escapace/typelevel",
   "license": "MPL-2.0",
   "private": false,
-  "repository": "escapace/typelevel.git",
+  "repository": "escapace/typelevel",
   "scripts": {
     "build": "rm -rf index.d.ts hkt.d.ts typelevel && tsc --emitDeclarationOnly --declarationDir .",
     "lint": "ls-lint && eslint 'src/**/*.ts?(x)'",
