@@ -1,132 +1,133 @@
 import TL from '@escapace/typelevel'
+import { expectType } from 'tsd'
 
 // $ExpectType "1"
-export type A1 = TL.Equal<TL.Head<[1]>, 1>
+expectType<TL.Equal<TL.Head<[1]>, 1>>('1')
 // $ExpectType "1"
-export type A2 = TL.Equal<TL.Head<[1, 2, 3]>, 1>
+expectType<TL.Equal<TL.Head<[1, 2, 3]>, 1>>('1')
 // $ExpectType "1"
-export type A3 = TL.Equal<TL.Head<[1, 2, 3], null>, 1>
+expectType<TL.Equal<TL.Head<[1, 2, 3], null>, 1>>('1')
 // $ExpectType "1"
-export type A4 = TL.Equal<TL.Head<[]>, never>
+expectType<TL.Equal<TL.Head<[]>, never>>('1')
 // $ExpectType "1"
-export type A5 = TL.Equal<TL.Head<[], null>, null>
+expectType<TL.Equal<TL.Head<[], null>, null>>('1')
 
 // $ExpectType "1"
-export type B1 = TL.Equal<TL.Tail<[]>, []>
+expectType<TL.Equal<TL.Tail<[]>, []>>('1')
 // $ExpectType "1"
-export type B2 = TL.Equal<TL.Tail<[1]>, []>
+expectType<TL.Equal<TL.Tail<[1]>, []>>('1')
 // $ExpectType "1"
-export type B3 = TL.Equal<TL.Tail<[1, 2, 3]>, [2, 3]>
+expectType<TL.Equal<TL.Tail<[1, 2, 3]>, [2, 3]>>('1')
 
 // $ExpectType "1"
-export type C1 = TL.Equal<TL.Last<[1]>, 1>
+expectType<TL.Equal<TL.Last<[1]>, 1>>('1')
 // $ExpectType "1"
-export type C2 = TL.Equal<TL.Last<[1, 2, 3]>, 3>
+expectType<TL.Equal<TL.Last<[1, 2, 3]>, 3>>('1')
 // $ExpectType "1"
-export type C3 = TL.Equal<TL.Last<[1, 2, 3]>, 3>
+expectType<TL.Equal<TL.Last<[1, 2, 3]>, 3>>('1')
 // $ExpectType "1"
-export type C4 = TL.Equal<TL.Last<[]>, never>
+expectType<TL.Equal<TL.Last<[]>, never>>('1')
 // $ExpectType "1"
-export type C5 = TL.Equal<TL.Last<[undefined]>, undefined>
+expectType<TL.Equal<TL.Last<[undefined]>, undefined>>('1')
 // // $ExpectType "1"
-export type C6 = TL.Equal<TL.Last<Array<number>>, number>
+expectType<TL.Equal<TL.Last<Array<number>>, number | undefined>>('1')
 // $ExpectType "1"
-export type C7 = TL.Equal<TL.First<[]>, never>
+expectType<TL.Equal<TL.First<[]>, never>>('1')
 
 // $ExpectType "1"
-export type D1 = TL.Equal<TL.Append<1, [4]>, [4, 1]>
+expectType<TL.Equal<TL.Append<1, [4]>, [4, 1]>>('1')
 // $ExpectType "1"
-export type D2 = TL.Equal<TL.Append<1, [2, 3]>, [2, 3, 1]>
+expectType<TL.Equal<TL.Append<1, [2, 3]>, [2, 3, 1]>>('1')
 
 // $ExpectType "1"
-export type D3 = TL.Equal<TL.Prepend<1, []>, [1]>
+expectType<TL.Equal<TL.Prepend<1, []>, [1]>>('1')
 // $ExpectType "1"
-export type D4 = TL.Equal<TL.Prepend<1, [2, 3]>, [1, 2, 3]>
+expectType<TL.Equal<TL.Prepend<1, [2, 3]>, [1, 2, 3]>>('1')
 
 // $ExpectType "1"
-export type E1 = TL.Equal<TL.Reverse<[]>, []>
+expectType<TL.Equal<TL.Reverse<[]>, []>>('1')
 // $ExpectType "1"
-export type E2 = TL.Equal<TL.Reverse<[1]>, [1]>
+expectType<TL.Equal<TL.Reverse<[1]>, [1]>>('1')
 // $ExpectType "1"
-export type E3 = TL.Equal<TL.Reverse<[1, 2, 3]>, [3, 2, 1]>
+expectType<TL.Equal<TL.Reverse<[1, 2, 3]>, [3, 2, 1]>>('1')
 
 // $ExpectType "1"
-export type F1 = TL.Equal<TL.Concat<[], []>, []>
+expectType<TL.Equal<TL.Concat<[], []>, []>>('1')
 // $ExpectType "1"
-export type F2 = TL.Equal<TL.Concat<[], [1]>, [1]>
+expectType<TL.Equal<TL.Concat<[], [1]>, [1]>>('1')
 // $ExpectType "1"
-export type F3 = TL.Equal<TL.Concat<[1], []>, [1]>
+expectType<TL.Equal<TL.Concat<[1], []>, [1]>>('1')
 // $ExpectType "1"
-export type F4 = TL.Equal<TL.Concat<[1, 2, 3], [4, 5]>, [1, 2, 3, 4, 5]>
+expectType<TL.Equal<TL.Concat<[1, 2, 3], [4, 5]>, [1, 2, 3, 4, 5]>>('1')
 
 // $ExpectType "1"
-export type G1 = TL.Equal<TL.Zip<[], []>, []>
+expectType<TL.Equal<TL.Zip<[], []>, []>>('1')
 // $ExpectType "1"
-export type G2 = TL.Equal<TL.Zip<[], [1]>, []>
+expectType<TL.Equal<TL.Zip<[], [1]>, []>>('1')
 // $ExpectType "1"
-export type G3 = TL.Equal<TL.Zip<[1], []>, []>
+expectType<TL.Equal<TL.Zip<[1], []>, []>>('1')
 // $ExpectType "1"
-export type G4 = TL.Equal<TL.Zip<[1, 2], [4, 5]>, [[1, 4], [2, 5]]>
+expectType<TL.Equal<TL.Zip<[1, 2], [4, 5]>, [[1, 4], [2, 5]]>>('1')
 // $ExpectType "1"
-export type G5 = TL.Equal<TL.Zip<[1, 2, 3], [4, 5]>, [[1, 4], [2, 5]]>
+expectType<TL.Equal<TL.Zip<[1, 2, 3], [4, 5]>, [[1, 4], [2, 5]]>>('1')
 
 // $ExpectType "1"
-export type H1 = TL.Equal<TL.Take<0, []>, []>
+expectType<TL.Equal<TL.Take<0, []>, []>>('1')
 // $ExpectType "1"
-export type H2 = TL.Equal<TL.Take<0, [1]>, []>
+expectType<TL.Equal<TL.Take<0, [1]>, []>>('1')
 // $ExpectType "1"
-export type H3 = TL.Equal<TL.Take<2, []>, []>
+expectType<TL.Equal<TL.Take<2, []>, []>>('1')
 // $ExpectType "1"
-export type H4 = TL.Equal<TL.Take<2, [1, 2, 3]>, [1, 2]>
+expectType<TL.Equal<TL.Take<2, [1, 2, 3]>, [1, 2]>>('1')
 // $ExpectType "1"
-export type H5 = TL.Equal<TL.Take<3, [1, 2, 3]>, [1, 2, 3]>
+expectType<TL.Equal<TL.Take<3, [1, 2, 3]>, [1, 2, 3]>>('1')
 // $ExpectType "1"
-export type H6 = TL.Equal<TL.Take<5, [1, 2, 3]>, [1, 2, 3]>
+expectType<TL.Equal<TL.Take<5, [1, 2, 3]>, [1, 2, 3]>>('1')
 
-// export type I1 = T.Equal<Tuple.Group<2, []>, []>
-// export type I1 = T.Equal<Tuple.Group<2, [1]>, [[1]]>
-// export type I1 = T.Equal<Tuple.Group<2, [1, 2, 3, 4]>, [[1, 2], [3, 4]]>
-// export type I1 = T.Equal<Tuple.Group<3, [1, 2, 3, 4]>, [[1, 2, 3], [4]]>
-
-// $ExpectType "1"
-export type J1 = TL.Equal<TL.Drop<0, []>, []>
-// $ExpectType "1"
-export type J2 = TL.Equal<TL.Drop<0, [1]>, [1]>
-// $ExpectType "1"
-export type J3 = TL.Equal<TL.Drop<2, []>, []>
-// $ExpectType "1"
-export type J4 = TL.Equal<TL.Drop<2, [1, 2, 3]>, [3]>
-// $ExpectType "1"
-export type J5 = TL.Equal<TL.Drop<3, [1, 2, 3]>, []>
-// $ExpectType "1"
-export type J6 = TL.Equal<TL.Drop<5, [1, 2, 3]>, []>
+// expectType<T.Equal<Tuple.Group<2, []>, []>
+// expectType<T.Equal<Tuple.Group<2, [1]>, [[1]]>
+// expectType<T.Equal<Tuple.Group<2, [1, 2, 3, 4]>, [[1, 2], [3, 4]]>
+// expectType<T.Equal<Tuple.Group<3, [1, 2, 3, 4]>, [[1, 2, 3], [4]]>
 
 // $ExpectType "1"
-export type K1 = TL.Equal<TL.Flatten<[]>, []>
+expectType<TL.Equal<TL.Drop<0, []>, []>>('1')
 // $ExpectType "1"
-export type K2 = TL.Equal<TL.Flatten<[[]]>, []>
+expectType<TL.Equal<TL.Drop<0, [1]>, [1]>>('1')
 // $ExpectType "1"
-export type K3 = TL.Equal<TL.Flatten<[[], [1]]>, [1]>
+expectType<TL.Equal<TL.Drop<2, []>, []>>('1')
 // $ExpectType "1"
-export type K4 = TL.Equal<TL.Flatten<[[1], []]>, [1]>
+expectType<TL.Equal<TL.Drop<2, [1, 2, 3]>, [3]>>('1')
 // $ExpectType "1"
-export type K5 = TL.Equal<TL.Flatten<[[1, 2, 3], [4, 5]]>, [1, 2, 3, 4, 5]>
+expectType<TL.Equal<TL.Drop<3, [1, 2, 3]>, []>>('1')
 // $ExpectType "1"
-export type K6 = TL.Equal<TL.Flatten<[[1, 2], [3, 4]]>, [1, 2, 3, 4]>
+expectType<TL.Equal<TL.Drop<5, [1, 2, 3]>, []>>('1')
+
 // $ExpectType "1"
-export type K7 = TL.Equal<TL.Flatten<[[1, 2], [], [3, 4]]>, [1, 2, 3, 4]>
+expectType<TL.Equal<TL.Flatten<[]>, []>>('1')
 // $ExpectType "1"
-export type K8 = TL.Equal<TL.Flatten<[[1, 2], [], [3, 4]]>, [1, 2, 3, 4]>
+expectType<TL.Equal<TL.Flatten<[[]]>, []>>('1')
+// $ExpectType "1"
+expectType<TL.Equal<TL.Flatten<[[], [1]]>, [1]>>('1')
+// $ExpectType "1"
+expectType<TL.Equal<TL.Flatten<[[1], []]>, [1]>>('1')
+// $ExpectType "1"
+expectType<TL.Equal<TL.Flatten<[[1, 2, 3], [4, 5]]>, [1, 2, 3, 4, 5]>>('1')
+// $ExpectType "1"
+expectType<TL.Equal<TL.Flatten<[[1, 2], [3, 4]]>, [1, 2, 3, 4]>>('1')
+// $ExpectType "1"
+expectType<TL.Equal<TL.Flatten<[[1, 2], [], [3, 4]]>, [1, 2, 3, 4]>>('1')
+// $ExpectType "1"
+expectType<TL.Equal<TL.Flatten<[[1, 2], [], [3, 4]]>, [1, 2, 3, 4]>>('1')
 
 // // $ExpectType "1"
-// export type K9 = TL.Equal<TL.Flatten<string[][][]>, string[]>
+// expectType<TL.Equal<TL.Flatten<string[][][]>, string[]>
 
 // $ExpectType "1"
-export type L1 = TL.Equal<TL.Repeat<1, 0>, []>
+expectType<TL.Equal<TL.Repeat<1, 0>, []>>('1')
 // $ExpectType "1"
-export type L2 = TL.Equal<TL.Repeat<1, 1>, [1]>
+expectType<TL.Equal<TL.Repeat<1, 1>, [1]>>('1')
 // $ExpectType "1"
-export type L3 = TL.Equal<TL.Repeat<1, 5>, [1, 1, 1, 1, 1]>
+expectType<TL.Equal<TL.Repeat<1, 5>, [1, 1, 1, 1, 1]>>('1')
 
-// export type A1 = T.Equal<Tuple.Range<0, 0>, [0]>
-// export type A1 = T.Equal<Tuple.Range<2, 5>, [2, 3, 4, 5]>
+// expectType<T.Equal<Tuple.Range<0, 0>, [0]>
+// expectType<T.Equal<Tuple.Range<2, 5>, [2, 3, 4, 5]>
