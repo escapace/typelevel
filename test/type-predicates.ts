@@ -1,115 +1,71 @@
 import TL from '@escapace/typelevel'
+import { expectType } from 'tsd'
 
-// $ExpectType "1"
-export type A1 = TL.Is.Never<never>
-// $ExpectType "0"
-export type A2 = TL.Is.Never<any>
-// $ExpectType "0"
-export type A3 = TL.Is.Never<unknown>
-// $ExpectType "0"
-export type A4 = TL.Is.Never<'abcd'>
+expectType<TL.Is.Never<never>>('1')
+expectType<TL.Is.Never<any>>('0')
+expectType<TL.Is.Never<unknown>>('0')
+expectType<TL.Is.Never<'abcd'>>('0')
 
-// $ExpectType "0"
-export type B1 = TL.Is.Any<never>
-// $ExpectType "1"
-export type B2 = TL.Is.Any<any>
-// $ExpectType "0"
-export type B3 = TL.Is.Any<unknown>
-// $ExpectType "0"
-export type B4 = TL.Is.Any<'abcd'>
+expectType<TL.Is.Any<never>>('0')
+expectType<TL.Is.Any<any>>('1')
+expectType<TL.Is.Any<unknown>>('0')
+expectType<TL.Is.Any<'abcd'>>('0')
 
-// $ExpectType "0"
-export type C1 = TL.Is.Unknown<never>
-// $ExpectType "0"
-export type C2 = TL.Is.Unknown<any>
-// $ExpectType "1"
-export type C3 = TL.Is.Unknown<unknown>
-// $ExpectType "0"
-export type C4 = TL.Is.Unknown<'abcd'>
+expectType<TL.Is.Unknown<never>>('0')
+expectType<TL.Is.Unknown<any>>('0')
+expectType<TL.Is.Unknown<unknown>>('1')
+expectType<TL.Is.Unknown<'abcd'>>('0')
 
-// $ExpectType never
-export type D0 = TL.Is.Falsy<never>
-// $ExpectType "1"
-export type D1 = TL.Is.Falsy<undefined | null | 0 | '' | false | void>
-// $ExpectType "1"
-export type D2 = TL.Is.Falsy<0>
-// $ExpectType "1"
-export type D3 = TL.Equal<TL.Is.Falsy<number>, '0' | '1'>
-// $ExpectType "1"
-export type D4 = TL.Is.Falsy<''>
-// $ExpectType "1"
-export type D5 = TL.Equal<TL.Is.Falsy<string>, '0' | '1'>
-// $ExpectType "1"
-export type D6 = TL.Is.Falsy<false>
-// $ExpectType "1"
-export type D7 = TL.Equal<TL.Is.Falsy<boolean>, '0' | '1'>
-// $ExpectType "1"
-export type D8 = TL.Equal<TL.Is.Falsy<string | number | boolean>, '0' | '1'>
-// $ExpectType "1"
-export type D9 = TL.Is.Falsy<undefined | null | void>
+expectType<TL.Is.Never<TL.Is.Falsy<never>>>('1')
+expectType<TL.Is.Falsy<undefined | null | 0 | '' | false | void>>('1')
+expectType<TL.Is.Falsy<0>>('1')
+expectType<TL.Equal<TL.Is.Falsy<number>, '0' | '1'>>('1')
+expectType<TL.Is.Falsy<''>>('1')
+expectType<TL.Equal<TL.Is.Falsy<string>, '0' | '1'>>('1')
+expectType<TL.Is.Falsy<false>>('1')
+expectType<TL.Equal<TL.Is.Falsy<boolean>, '0' | '1'>>('1')
+expectType<TL.Equal<TL.Is.Falsy<string | number | boolean>, '0' | '1'>>('1')
+expectType<TL.Is.Falsy<undefined | null | void>>('1')
 
-// $ExpectType never
-export type E0 = TL.Is.Truthy<never>
-// $ExpectType "0"
-export type E1 = TL.Is.Truthy<undefined | null | 0 | '' | false | void>
-// $ExpectType "0"
-export type E2 = TL.Is.Truthy<0>
-// $ExpectType "1"
-export type E3 = TL.Equal<TL.Is.Truthy<number>, '0' | '1'>
-// $ExpectType "0"
-export type E4 = TL.Is.Truthy<''>
-// $ExpectType "1"
-export type E5 = TL.Equal<TL.Is.Truthy<string>, '0' | '1'>
-// $ExpectType "0"
-export type E6 = TL.Is.Truthy<false>
-// $ExpectType "1"
-export type E7 = TL.Equal<TL.Is.Truthy<boolean>, '0' | '1'>
-// $ExpectType "1"
-export type E8 = TL.Equal<TL.Is.Truthy<string | number | boolean>, '0' | '1'>
-// $ExpectType "0"
-export type E9 = TL.Is.Truthy<undefined | null | void>
+expectType<TL.Is.Never<TL.Is.Truthy<never>>>('1')
+expectType<TL.Is.Truthy<undefined | null | 0 | '' | false | void>>('0')
+expectType<TL.Is.Truthy<0>>('0')
+expectType<TL.Equal<TL.Is.Truthy<number>, '0' | '1'>>('1')
+expectType<TL.Is.Truthy<''>>('0')
+expectType<TL.Equal<TL.Is.Truthy<string>, '0' | '1'>>('1')
+expectType<TL.Is.Truthy<false>>('0')
+expectType<TL.Equal<TL.Is.Truthy<boolean>, '0' | '1'>>('1')
+expectType<TL.Equal<TL.Is.Truthy<string | number | boolean>, '0' | '1'>>('1')
+expectType<TL.Is.Truthy<undefined | null | void>>('0')
 
-// $ExpectType "1"
-export type F1 = TL.Is.Primitive<'abcd'>
-// $ExpectType "1"
-export type F2 = TL.Is.Primitive<2>
-// $ExpectType "1"
-export type F3 = TL.Is.Primitive<false>
-// $ExpectType "1"
-export type F4 = TL.Is.Primitive<symbol>
-// $ExpectType "0"
-export type F5 = TL.Is.Primitive<{}>
+expectType<TL.Is.Primitive<'abcd'>>('1')
+expectType<TL.Is.Primitive<2>>('1')
+expectType<TL.Is.Primitive<false>>('1')
+expectType<TL.Is.Primitive<symbol>>('1')
+expectType<TL.Is.Primitive<{}>>('0')
 
-// $ExpectType "1"
-export type G1 = TL.Is.String<'abcd'>
-// $ExpectType "0"
-export type G2 = TL.Is.String<{}>
+expectType<TL.Is.String<'abcd'>>('1')
+expectType<TL.Is.String<{}>>('0')
 
-// $ExpectType "1"
-export type H1 = TL.Is.Number<1>
-// $ExpectType "0"
-export type H2 = TL.Is.Number<{}>
+expectType<TL.Is.Number<1>>('1')
+expectType<TL.Is.Number<{}>>('0')
 
-// $ExpectType "1"
-export type I1 = TL.Is.Boolean<true>
-// $ExpectType "0"
-export type I2 = TL.Is.Boolean<{}>
+expectType<TL.Is.Boolean<true>>('1')
+expectType<TL.Is.Boolean<{}>>('0')
 
-// $ExpectType "1"
-export type J1 = TL.Is.Symbol<symbol>
-// $ExpectType "0"
-export type J2 = TL.Is.Symbol<{}>
+expectType<TL.Is.Symbol<symbol>>('1')
+expectType<TL.Is.Symbol<{}>>('0')
 
 // // $ExpectType "1"
-// export type G1 = T.Is.Determinate<Bool.True>
+// expectType<T.Is.Determinate<Bool.True>
 // // $ExpectType "1"
-// export type G2 = T.Is.Determinate<Bool.False>
+// expectType<T.Is.Determinate<Bool.False>
 // // $ExpectType "0"
-// export type G3 = T.Is.Determinate<Bool.True | Bool.False>
+// expectType<T.Is.Determinate<Bool.True | Bool.False>
 
 // // $ExpectType "0"
-// export type H1 = T.Is.Indeterminate<Bool.True>
+// expectType<T.Is.Indeterminate<Bool.True>
 // // $ExpectType "0"
-// export type H2 = T.Is.Indeterminate<Bool.False>
+// expectType<T.Is.Indeterminate<Bool.False>
 // // $ExpectType "1"
-// export type H3 = T.Is.Indeterminate<Bool.True | Bool.False>
+// expectType<T.Is.Indeterminate<Bool.True | Bool.False>
