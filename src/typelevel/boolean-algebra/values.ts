@@ -1,2 +1,2 @@
-export type True = '1'
-export type False = '0'
+export type True = 1
+export type False = 0
