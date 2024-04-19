@@ -1,5 +1,5 @@
-import { False as FALSE } from '../boolean-algebra/values'
-import { Equal } from '../type/equal'
+import type { False as FALSE } from '../boolean-algebra/values'
+import type { Equal } from '../type/equal'
 
 /**
  * Asserts that T is False.

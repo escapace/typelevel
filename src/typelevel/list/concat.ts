@@ -1,4 +1,4 @@
-import { List } from './list'
+import type { List } from './list'
 
 /**
  * Returns a new list concatenating A and B

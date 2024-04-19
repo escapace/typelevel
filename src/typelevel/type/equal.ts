@@ -1,13 +1,12 @@
-import { False, True } from '../boolean-algebra/values'
+import type { False, True } from '../boolean-algebra/values'
 
 /**
  * Asserts strict equality of A and B.
  */
-export type Equal<A, B> = (<T>() => T extends A ? 1 : 2) extends <
-  T
->() => T extends B ? 1 : 2
-  ? True
-  : False
+export type Equal<A, B> =
+  (<T>() => T extends A ? 1 : 2) extends <T>() => T extends B ? 1 : 2
+    ? True
+    : False
 
 // import { Unknown } from '../is/unknown'
 // import { Or } from '../boolean-algebra/or'

@@ -1,1 +1,1 @@
-export type Constructable<T> = new (...args: any[]) => T
+export type Constructable<T> = new (...arguments_: any[]) => T

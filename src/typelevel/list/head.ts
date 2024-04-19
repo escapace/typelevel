@@ -1,4 +1,4 @@
-import { List } from './list'
+import type { List } from './list'
 
 /**
  * Gets the first element of list T.

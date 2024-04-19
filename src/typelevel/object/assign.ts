@@ -1,4 +1,4 @@
-import { Difference } from '../set-algebra/difference'
+import type { Difference } from '../set-algebra/difference'
 
 export type Assign<T extends object, U extends object> = Pick<
   T,

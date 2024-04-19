@@ -1,5 +1,5 @@
-import { Not } from '../boolean-algebra/not'
-import { Falsy } from './falsy'
+import type { Not } from '../boolean-algebra/not'
+import type { Falsy } from './falsy'
 
 /**
  * Returns True if T is truthy.

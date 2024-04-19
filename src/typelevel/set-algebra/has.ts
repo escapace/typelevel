@@ -1,5 +1,5 @@
-import { Not } from '../boolean-algebra/not'
-import { Never } from '../is/never'
+import type { Not } from '../boolean-algebra/not'
+import type { Never } from '../is/never'
 
 /**
  * Returns True if B has any value in A.
