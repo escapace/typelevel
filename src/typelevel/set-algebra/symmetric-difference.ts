@@ -1,5 +1,5 @@
-import { Difference } from './difference'
-import { Union } from './union'
+import type { Difference } from './difference'
+import type { Union } from './union'
 
 /**
  * Returns a set of elements belonging to one but not both of two given sets.

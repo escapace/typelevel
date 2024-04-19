@@ -1,4 +1,4 @@
-import { False, True } from '../boolean-algebra/values'
+import type { False, True } from '../boolean-algebra/values'
 
 /**
  * Returns True if T is falsy.
@@ -9,16 +9,16 @@ import { False, True } from '../boolean-algebra/values'
 export type Falsy<T> = T extends ''
   ? True
   : T extends string
-  ? True | False
-  : T extends 0
-  ? True
-  : T extends number
-  ? True | False
-  : T extends false
-  ? True
-  : T extends boolean
-  ? True | False
-  : // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
-  T extends undefined | null | void
-  ? True
-  : never
+    ? False | True
+    : T extends 0
+      ? True
+      : T extends number
+        ? False | True
+        : T extends false
+          ? True
+          : T extends boolean
+            ? False | True
+            : // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
+              T extends null | undefined | void
+              ? True
+              : never

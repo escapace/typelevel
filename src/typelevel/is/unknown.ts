@@ -1,4 +1,4 @@
-import { Equal } from '../type/equal'
+import type { Equal } from '../type/equal'
 
 /**
  * Returns True if T is unknown.

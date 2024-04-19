@@ -5,8 +5,8 @@ export declare const Phantom: unique symbol
  * @since 2.0.0
  */
 export interface HKT<URI, A> {
-  readonly _URI: URI
   readonly _A: A
+  readonly _URI: URI
 }
 
 /**

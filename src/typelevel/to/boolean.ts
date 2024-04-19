@@ -1,6 +1,6 @@
-import { False, True } from '../boolean-algebra/index'
+import type { False, True } from '../boolean-algebra/index'
 
 export type Boolean<T extends False | True> = {
-  1: true
   0: false
+  1: true
 }[T]

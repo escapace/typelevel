@@ -1,7 +1,7 @@
-import { Tail } from './tail'
-import { Reverse } from './reverse'
-import { Head } from './head'
-import { Cons } from './prepend'
+import type { Tail } from './tail'
+import type { Reverse } from './reverse'
+import type { Head } from './head'
+import type { Cons } from './prepend'
 
 /**
  * Returns a slice of list T with N elements taken from the beginning.

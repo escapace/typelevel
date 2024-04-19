@@ -1,4 +1,4 @@
-import { False, True } from '../boolean-algebra/values'
+import type { False, True } from '../boolean-algebra/values'
 
 /**
  * Returns True if T is number | boolean | string | symbol.
@@ -6,9 +6,9 @@ import { False, True } from '../boolean-algebra/values'
 export type Primitive<T> = T extends number
   ? True
   : T extends boolean
-  ? True
-  : T extends string
-  ? True
-  : T extends symbol
-  ? True
-  : False
+    ? True
+    : T extends string
+      ? True
+      : T extends symbol
+        ? True
+        : False

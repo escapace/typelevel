@@ -1,5 +1,5 @@
-import { True as TRUE } from '../boolean-algebra/values'
-import { Equal } from '../type/equal'
+import type { True as TRUE } from '../boolean-algebra/values'
+import type { Equal } from '../type/equal'
 
 /**
  * Asserts that T is True.

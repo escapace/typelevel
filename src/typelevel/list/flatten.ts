@@ -1,7 +1,7 @@
-import { Tail } from './tail'
-import { Reverse } from './reverse'
-import { Head } from './head'
-import { Cons } from './prepend'
+import type { Tail } from './tail'
+import type { Reverse } from './reverse'
+import type { Head } from './head'
+import type { Cons } from './prepend'
 
 /**
  * Flattens list a single level deep.

@@ -1,4 +1,4 @@
-import { False, True } from '../boolean-algebra/values'
+import type { False, True } from '../boolean-algebra/values'
 
 /**
  * Check if a type matches another (`<=`).

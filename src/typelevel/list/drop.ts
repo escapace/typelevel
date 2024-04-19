@@ -1,6 +1,6 @@
-import { Tail } from './tail'
-import { Head } from './head'
-import { Cons } from './prepend'
+import type { Tail } from './tail'
+import type { Head } from './head'
+import type { Cons } from './prepend'
 
 /**
  * Creates a slice of list T with N elements dropped from the beginning.

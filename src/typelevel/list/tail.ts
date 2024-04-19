@@ -1,4 +1,4 @@
-import { List } from './list'
+import type { List } from './list'
 
 /**
  * Returns all but the first element of the list.
