@@ -4,7 +4,7 @@
 export type Widen<T> = T extends boolean
   ? boolean
   : T extends number
-  ? number
-  : T extends string
-  ? string
-  : T
+    ? number
+    : T extends string
+      ? string
+      : T

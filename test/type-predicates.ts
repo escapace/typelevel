@@ -1,4 +1,5 @@
-import TL from '@escapace/typelevel'
+/* eslint-disable typescript/no-invalid-void-type */
+import type TL from '@escapace/typelevel'
 import { expectType } from 'tsd'
 
 expectType<TL.Is.Never<never>>(1)
@@ -17,26 +18,26 @@ expectType<TL.Is.Unknown<unknown>>(1)
 expectType<TL.Is.Unknown<'abcd'>>(0)
 
 expectType<TL.Is.Never<TL.Is.Falsy<never>>>(1)
-expectType<TL.Is.Falsy<undefined | null | 0 | '' | false | void>>(1)
+expectType<TL.Is.Falsy<'' | 0 | false | void | null | undefined>>(1)
 expectType<TL.Is.Falsy<0>>(1)
 expectType<TL.Equal<TL.Is.Falsy<number>, 0 | 1>>(1)
 expectType<TL.Is.Falsy<''>>(1)
 expectType<TL.Equal<TL.Is.Falsy<string>, 0 | 1>>(1)
 expectType<TL.Is.Falsy<false>>(1)
 expectType<TL.Equal<TL.Is.Falsy<boolean>, 0 | 1>>(1)
-expectType<TL.Equal<TL.Is.Falsy<string | number | boolean>, 0 | 1>>(1)
-expectType<TL.Is.Falsy<undefined | null | void>>(1)
+expectType<TL.Equal<TL.Is.Falsy<boolean | number | string>, 0 | 1>>(1)
+expectType<TL.Is.Falsy<void | null | undefined>>(1)
 
 expectType<TL.Is.Never<TL.Is.Truthy<never>>>(1)
-expectType<TL.Is.Truthy<undefined | null | 0 | '' | false | void>>(0)
+expectType<TL.Is.Truthy<'' | 0 | false | void | null | undefined>>(0)
 expectType<TL.Is.Truthy<0>>(0)
 expectType<TL.Equal<TL.Is.Truthy<number>, 0 | 1>>(1)
 expectType<TL.Is.Truthy<''>>(0)
 expectType<TL.Equal<TL.Is.Truthy<string>, 0 | 1>>(1)
 expectType<TL.Is.Truthy<false>>(0)
 expectType<TL.Equal<TL.Is.Truthy<boolean>, 0 | 1>>(1)
-expectType<TL.Equal<TL.Is.Truthy<string | number | boolean>, 0 | 1>>(1)
-expectType<TL.Is.Truthy<undefined | null | void>>(0)
+expectType<TL.Equal<TL.Is.Truthy<boolean | number | string>, 0 | 1>>(1)
+expectType<TL.Is.Truthy<void | null | undefined>>(0)
 
 expectType<TL.Is.Primitive<'abcd'>>(1)
 expectType<TL.Is.Primitive<2>>(1)
