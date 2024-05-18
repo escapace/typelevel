@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable typescript/no-unused-vars */
 
 import type { If } from '../type/if'
 import type { Unknown } from '../is/unknown'

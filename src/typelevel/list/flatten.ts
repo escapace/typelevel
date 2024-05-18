@@ -6,11 +6,7 @@ import type { Cons } from './prepend'
 /**
  * Flattens list a single level deep.
  */
-export type Flatten<
-  T extends any[][],
-  R1 extends any[] = [],
-  R2 extends any[] = []
-> = {
+export type Flatten<T extends any[][], R1 extends any[] = [], R2 extends any[] = []> = {
   0: Reverse<R2>
   1: Flatten<Tail<T>, Head<T, []>, R2>
   2: Flatten<T, Tail<R1>, Cons<Head<R1>, R2>>

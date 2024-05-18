@@ -1,4 +1,4 @@
-import TL from '@escapace/typelevel'
+import type TL from '@escapace/typelevel'
 import { expectType } from 'tsd'
 
 // $ExpectType "1"
@@ -30,7 +30,7 @@ expectType<TL.Equal<TL.Last<[]>, never>>(1)
 // $ExpectType "1"
 expectType<TL.Equal<TL.Last<[undefined]>, undefined>>(1)
 // // $ExpectType "1"
-expectType<TL.Equal<TL.Last<Array<number>>, number | undefined>>(1)
+expectType<TL.Equal<TL.Last<number[]>, number | undefined>>(1)
 // $ExpectType "1"
 expectType<TL.Equal<TL.First<[]>, never>>(1)
 

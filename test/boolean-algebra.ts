@@ -1,4 +1,4 @@
-import TL from '@escapace/typelevel'
+import type TL from '@escapace/typelevel'
 import { expectType } from 'tsd'
 
 // $ExpectType "0"

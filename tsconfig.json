@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowArbitraryExtensions": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "declaration": true,
@@ -8,20 +9,24 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": false,
     "isolatedModules": true,
-    "lib": ["esnext"],
+    "lib": ["DOM", "DOM.Iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "paths": {
+      "@escapace/typelevel": ["./src"]
+    },
     "pretty": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
     "typeRoots": ["node_modules/@types"],
-    "useDefineForClassFields": true
-  },
-  "include": ["src"]
+    "useDefineForClassFields": true,
+    "verbatimModuleSyntax": true
+  }
 }

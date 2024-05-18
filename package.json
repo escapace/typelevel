@@ -10,19 +10,18 @@
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
-    "@escapace/pnpm-pack": "0.2.0",
+    "@escapace/pnpm-pack": "0.4.1",
     "@ls-lint/ls-lint": "2.2.3",
-    "eslint": "9.1.1",
-    "eslint-config-escapace": "5.0.5",
-    "lefthook": "1.6.10",
+    "eslint": "9.3.0",
+    "eslint-config-escapace": "5.0.12",
+    "lefthook": "1.6.12",
     "prettier": "3.2.5",
-    "prettier-config-escapace": "1.2.0",
+    "prettier-config-escapace": "1.2.1",
     "syncpack": "12.3.2",
     "tsd": "0.31.0",
     "typescript": "5.4.5"
   },
   "engines": {
-    "node": ">=20.12.0",
     "pnpm": ">=8.15.6"
   },
   "files": [
@@ -33,14 +32,19 @@
   "homepage": "https://github.com/escapace/typelevel",
   "license": "MPL-2.0",
   "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "repository": "escapace/typelevel",
   "scripts": {
-    "build": "rm -rf index.d.ts hkt.d.ts typelevel && tsc --emitDeclarationOnly --declarationDir .",
-    "lint": "ls-lint --config .ls-lint.yaml && knip && eslint",
+    "build": "rm -rf index.d.ts hkt.d.ts typelevel && tsc -p tsconfig-build.json --emitDeclarationOnly --declarationDir .",
+    "format": "eslint --no-warn-ignored --fix && prettier -uw .",
+    "lint": "ls-lint --config .ls-lint.yaml && eslint",
     "pack": "pnpm-pack package --pack-destination lib",
     "prepare": "lefthook install",
     "test": "echo ok",
-    "typecheck": "tsc -p test/tsconfig.json --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "sideEffects": false,
   "type": "module",

@@ -13,12 +13,6 @@ pre-commit:
     - rebase
 
   commands:
-    knip:
-      glob: '{package.json,**/package.json,pnpm-lock.yaml}'
-      priority: 1
-      run: pnpm exec knip
-
-      skip: true
     ls-lint:
       priority: 1
       run: pnpm exec ls-lint --config '.ls-lint.yaml'
@@ -48,14 +42,14 @@ pre-commit:
       stage_fixed: true
 
     eslint:
-      exclude: '(^|/)pnpm-lock.yaml$'
+      exclude: '^[\/]*(pnpm-lock\.yaml|lib)$'
       glob: '*.{js,mjs,cjs,ts,mts,cts,yml,yaml,json}'
       priority: 6
-      run: pnpm exec eslint --fix {staged_files}
+      run: pnpm exec eslint --no-warn-ignored --fix {staged_files}
       stage_fixed: true
 
     prettier:
-      exclude: '(^|/)pnpm-lock.yaml$'
+      exclude: '^[\/]*(pnpm-lock\.yaml|lib)$'
       glob: '*.{js,mjs,cjs,ts,mts,cts,yml,yaml,json,md}'
       priority: 7
       run: pnpm exec prettier --write {staged_files}

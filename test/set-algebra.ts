@@ -1,4 +1,4 @@
-import TL from '@escapace/typelevel'
+import type TL from '@escapace/typelevel'
 import { expectType } from 'tsd'
 
 // $ExpectType "1"
@@ -11,22 +11,13 @@ expectType<TL.Equal<TL.Complement<'1' | '2' | '3', '2' | '3'>, '1'>>(1)
 expectType<TL.Equal<TL.Difference<'1' | '2' | '3', '2' | '3' | '4'>, '1'>>(1)
 
 // $ExpectType "1"
-expectType<TL.Equal<
-  TL.Intersection<'1' | '2' | '3' | '5', '2' | '3' | '4' | '6'>,
-  '2' | '3'
->>(1)
+expectType<TL.Equal<TL.Intersection<'1' | '2' | '3' | '5', '2' | '3' | '4' | '6'>, '2' | '3'>>(1)
 
 // $ExpectType "1"
-expectType<TL.Equal<
-  TL.SymmetricDifference<'1' | '2' | '3', '2' | '3' | '4'>,
-  '1' | '4'
->>(1)
+expectType<TL.Equal<TL.SymmetricDifference<'1' | '2' | '3', '2' | '3' | '4'>, '1' | '4'>>(1)
 
 // $ExpectType "1"
-expectType<TL.Equal<
-  TL.SymmetricDifference<'1' | '2' | '3', '3' | '4'>,
-  '1' | '2' | '4'
->>(1)
+expectType<TL.Equal<TL.SymmetricDifference<'1' | '2' | '3', '3' | '4'>, '1' | '2' | '4'>>(1)
 
 // $ExpectType "1"
 expectType<TL.Assert.False<TL.Contains<'1' | '2' | '3', '3' | '4'>>>(1)
