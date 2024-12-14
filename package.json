@@ -8,18 +8,18 @@
   },
   "bugs": "https://github.com/escapace/typelevel/issues",
   "devDependencies": {
-    "@commitlint/cli": "19.3.0",
-    "@commitlint/config-conventional": "19.2.2",
+    "@commitlint/cli": "19.6.0",
+    "@commitlint/config-conventional": "19.6.0",
     "@escapace/pnpm-pack": "0.5.3",
     "@ls-lint/ls-lint": "2.2.3",
-    "eslint": "9.6.0",
+    "eslint": "9.16.0",
     "eslint-config-escapace": "5.4.0",
-    "lefthook": "1.6.18",
-    "prettier": "3.3.2",
+    "lefthook": "1.9.0",
+    "prettier": "3.4.2",
     "prettier-config-escapace": "1.2.1",
-    "syncpack": "12.3.3",
-    "tsd": "0.31.1",
-    "typescript": "5.5.3"
+    "syncpack": "12.4.0",
+    "tsd": "0.31.2",
+    "typescript": "5.7.2"
   },
   "engines": {
     "pnpm": ">=9.4.0"
