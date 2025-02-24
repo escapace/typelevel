@@ -24,8 +24,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.2)
       eslint-config-escapace:
-        specifier: 5.4.4
-        version: 5.4.4(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2)
+        specifier: 5.4.5
+        version: 5.4.5(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2)
       lefthook:
         specifier: 1.9.0
         version: 1.9.0
@@ -750,8 +750,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-escapace@5.4.4:
-    resolution: {integrity: sha512-+J/+lhQi63zPLaAq8Qvv38sPDUutkK7FyJRsMa+ESqQRUU+k3HCgxzIFS6mWY/mxgzjTDU2avyPQ0NmqBHf9Dw==}
+  eslint-config-escapace@5.4.5:
+    resolution: {integrity: sha512-U95rSR6SSbPCfNwOtZFJuzX5eRz0//SXZ+SNLGJFwBZ/uPqpFKvBBdOvfwrYQwcLuaO3Htd6e5oqrGlUaBPoPA==}
     engines: {node: '>=22.11.0', pnpm: '>=9.14.4'}
     peerDependencies:
       eslint: '>=9.19.0'
@@ -2846,7 +2846,7 @@ snapshots:
       eslint: 9.16.0(jiti@2.4.2)
       semver: 7.7.1
 
-  eslint-config-escapace@5.4.4(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2):
+  eslint-config-escapace@5.4.5(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2):
     dependencies:
       '@stylistic/eslint-plugin': 3.1.0(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2)
       '@typescript-eslint/utils': 8.23.0(eslint@9.16.0(jiti@2.4.2))(typescript@5.7.2)
