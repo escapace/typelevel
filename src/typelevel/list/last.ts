@@ -1,5 +1,3 @@
-/* eslint-disable typescript/no-unused-vars */
-
 import type { If } from '../type/if'
 import type { Unknown } from '../is/unknown'
 import type { List } from './list'

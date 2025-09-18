@@ -19,6 +19,6 @@ export type Falsy<T> = T extends ''
           : T extends boolean
             ? False | True
             : // eslint-disable-next-line typescript/no-invalid-void-type
-              T extends void | null | undefined
+              T extends null | undefined | void
               ? True
               : never
