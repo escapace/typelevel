@@ -19,7 +19,7 @@
     "prettier-config-escapace": "1.2.1",
     "syncpack": "13.0.4",
     "tsd": "0.33.0",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
   "engines": {
     "pnpm": ">=10.14.0"
