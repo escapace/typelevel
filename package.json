@@ -8,16 +8,18 @@
   },
   "bugs": "https://github.com/escapace/typelevel/issues",
   "devDependencies": {
-    "@commitlint/cli": "19.8.1",
-    "@commitlint/config-conventional": "19.8.1",
+    "@commitlint/cli": "20.5.0",
+    "@commitlint/config-conventional": "20.5.0",
     "@escapace/pnpm-pack": "0.8.0",
+    "@escapace/syncpack-configuration": "0.1.0",
+    "@escapace/typelevel": "link:",
     "@ls-lint/ls-lint": "2.3.1",
-    "eslint": "9.35.0",
+    "eslint": "10.2.0",
     "eslint-config-escapace": "5.16.1",
-    "lefthook": "1.13.1",
-    "prettier": "3.6.2",
+    "lefthook": "2.1.5",
+    "prettier": "3.8.1",
     "prettier-config-escapace": "1.2.2",
-    "syncpack": "13.0.4",
+    "syncpack": "14.3.0",
     "tsd": "0.33.0",
     "typescript": "5.9.3"
   },
@@ -25,9 +27,7 @@
     "pnpm": ">=10.14.0"
   },
   "files": [
-    "hkt.d.ts",
-    "index.d.ts",
-    "typelevel"
+    "lib/types"
   ],
   "homepage": "https://github.com/escapace/typelevel",
   "license": "MPL-2.0",
@@ -38,17 +38,17 @@
   },
   "repository": "escapace/typelevel",
   "scripts": {
-    "build": "rm -rf index.d.ts hkt.d.ts typelevel && tsc -p tsconfig-build.json --emitDeclarationOnly --declarationDir .",
-    "format": "eslint --no-warn-ignored --fix && prettier -uw .",
+    "build": "rm -rf index.d.ts lib/types && tsc -p tsconfig-build.json --emitDeclarationOnly --declarationDir lib/types",
+    "format": "syncpack format && eslint --no-warn-ignored --fix && prettier --no-error-on-unmatched-pattern -uw .",
     "lint": "ls-lint --config .ls-lint.yaml && eslint",
     "ls-lint": "ls-lint --config .ls-lint.yaml",
     "pack": "pnpm-pack package --pack-destination lib",
     "prepare": "lefthook install",
-    "syncpack": "syncpack fix-mismatches && syncpack-set-semver-ranges && syncpack format",
-    "test": "echo ok",
+    "syncpack": "syncpack fix && syncpack format",
+    "test": "tsd --files src/index.test-d.ts",
     "typecheck": "tsc --noEmit"
   },
   "sideEffects": false,
   "type": "module",
-  "types": "index.d.ts"
+  "types": "lib/types/index.d.ts"
 }

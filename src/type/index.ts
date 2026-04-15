@@ -1,5 +1,5 @@
 export * from './widen'
-export * from '../../hkt'
+export * from '../hkt'
 export * from './extends'
 export * from './equal'
 export * from './constructable'

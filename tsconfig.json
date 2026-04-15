@@ -4,22 +4,22 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "declaration": true,
+    "declarationDir": "lib/types",
     "declarationMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": false,
     "isolatedModules": true,
-    "lib": ["DOM", "DOM.Iterable", "esnext"],
+    "lib": ["esnext"],
     "module": "esnext",
+    "moduleDetection": "force",
     "moduleResolution": "bundler",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
+    "noUncheckedSideEffectImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "paths": {
-      "@escapace/typelevel": ["./src"]
-    },
     "pretty": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
@@ -28,5 +28,7 @@
     "typeRoots": ["node_modules/@types"],
     "useDefineForClassFields": true,
     "verbatimModuleSyntax": true
-  }
+  },
+  "exclude": ["lib"],
+  "include": ["src"]
 }
