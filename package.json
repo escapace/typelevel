@@ -38,7 +38,7 @@
   },
   "repository": "escapace/typelevel",
   "scripts": {
-    "build": "rm -rf index.d.ts lib/types && tsc -p tsconfig-build.json --emitDeclarationOnly --declarationDir lib/types",
+    "build": "rm -rf lib/types && tsc -p tsconfig-build.json --emitDeclarationOnly --declarationDir lib/types",
     "format": "syncpack format && eslint --no-warn-ignored --fix && prettier --no-error-on-unmatched-pattern -uw .",
     "lint": "ls-lint --config .ls-lint.yaml && eslint",
     "ls-lint": "ls-lint --config .ls-lint.yaml",
