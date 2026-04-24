@@ -21,7 +21,7 @@
     "prettier-config-escapace": "1.2.2",
     "syncpack": "14.3.0",
     "tsd": "0.33.0",
-    "typescript": "6.0.2"
+    "typescript": "6.0.3"
   },
   "engines": {
     "pnpm": ">=10.14.0"
