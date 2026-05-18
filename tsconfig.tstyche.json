@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "rootDir": "./src"
+    "noEmit": true
   },
-  "exclude": ["**/*.test-d.ts", "**/*.tst.*"],
   "extends": "./tsconfig.json",
   "include": ["src"]
 }
