@@ -142,8 +142,8 @@ packages:
       conventional-commits-parser:
         optional: true
 
-  '@conventional-changelog/template@1.3.0':
-    resolution: {integrity: sha512-GsCw/qu92GI0EX6s7fxUi/SG1lmFjG9XZivxxEDZXqztuQKCn5o5wKdz4v005zci0Md7EZzgAwmQLoIEDZoaow==}
+  '@conventional-changelog/template@1.4.0':
+    resolution: {integrity: sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==}
     engines: {node: '>=22'}
 
   '@escapace/pnpm-pack@0.9.2':
@@ -226,54 +226,54 @@ packages:
     resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@pnpm/config.normalize-registries@1100.1.0':
-    resolution: {integrity: sha512-l8xf0PlDbupJsIYwh17Poc7+m/dIYTUcwK8HaLv/YOJCxKjt8KnOaVZE5ZPO2t9YQqa1YPFBBwdI+GCEy55E4A==}
+  '@pnpm/config.normalize-registries@1101.0.0':
+    resolution: {integrity: sha512-+2p2vgurPOhlayWNsVq/zpfEgXLO+3KX/0H5YhpFgOCQ+wocE2T0/8HF+Dv1Xt13UnUNbL7pCDWEBLzIcKtw5w==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/constants@1101.0.0':
-    resolution: {integrity: sha512-jJQU6y8lhic2at0+W246+tMDdEqhbS1WSRlTjmIXeXrrWU2rAbhixi11loE+lI3f/E1Ci1+3i5N6ewOumeNJdg==}
+  '@pnpm/constants@1102.0.0':
+    resolution: {integrity: sha512-HIDFQTclaw7oxZjVUxDP+1dsNtBK8PRXj3qanALtK7iLi/FlVnwFQs9ISBocEX6Kivytn/YCT+UEStoFPBWQeQ==}
     engines: {node: '>=22.13'}
 
   '@pnpm/crypto.hash@1100.0.2':
     resolution: {integrity: sha512-7MNukALUyiFMwOYQongnRWZnpjs4R5lBZgKcycnWjBhN4LxavPciczrz7XK0GuFrw3QS1V5wMV02lPYLF/bA4w==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/deps.path@1100.1.0':
-    resolution: {integrity: sha512-1KbfwG1D5mKg0g1XacgGlw9NsBpO7HspQHdYbMhN6XvQ+10V3v4G9PQCo5Vlems6qolZKNYC0wv/HKOETuAsQA==}
+  '@pnpm/deps.path@1101.0.0':
+    resolution: {integrity: sha512-awgi3rf0/Kes/QTVLx/E34rGrg72hNASNDQVp3dE0sQkNv71D3RAQI3K4kaey2VPSvTPx4O/Kn8nMpEUnxVmvA==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/error@1100.1.2':
-    resolution: {integrity: sha512-HzeZOy38srT5glZqrlBcdfHd13tec3wrLiVRB5vQnj+ScOswQ2DzZzMJpqMh39gss6zhiTl/MskqKzoY/qT9ew==}
+  '@pnpm/error@1100.1.3':
+    resolution: {integrity: sha512-YwnVAPxkVCzKksIqnMn+EmiM186KWPAnVwqp+ro5Y2N4b4nhvdzYSfbO6OM4Is9z/EC1qOA6rF63QQ+z4DVjgw==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/fetching.fetcher-base@1100.2.7':
-    resolution: {integrity: sha512-piCdM7JfJ/CcaiSza3ge3fkOda1sV5q4PYwKpPVIKS/415CfwyGbqN2738NjHCQ6Nx5oiNPSDZIJ2ZTRZFG27Q==}
+  '@pnpm/fetching.fetcher-base@1100.2.8':
+    resolution: {integrity: sha512-j8rOlWD7hfW7emwtYudsQhzXTormlZbHtP94DDZhwzKJR8CrunHrmqEYHY68xwCb2Chd4FPYILNzTDHAYDK99Q==}
     engines: {node: '>=22.13'}
 
   '@pnpm/fs.graceful-fs@1100.1.1':
     resolution: {integrity: sha512-knCLxjy9vx18Z1cwzzqD251jxrJhQpJ09Gch+AecX0rOWj/sygjk0UXSWZPaHPwVtK5Je7i2CIAoyYwsb8wZTg==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/hooks.types@1100.2.6':
-    resolution: {integrity: sha512-45eHmVhaWiIeBPHzRmTAFhJMH6eVYMOCY/loa6jg9SDS19FTvYDKgAgOEXOWDXsUyzCMrpPsExGsHzDhKsPgrg==}
+  '@pnpm/hooks.types@1101.0.0':
+    resolution: {integrity: sha512-yuRQYUKJMW4D3OskOcBPhnExlFDeOmgxnQGWImCR5mXkNjcOAFAkd7EGFQ5jTCZ9b0z6rMZ6yqqKd/Kgcs7SzQ==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/lockfile.fs@1100.2.2':
-    resolution: {integrity: sha512-OxQswRFx3yjR8Y/7tNTTMkZVbig+CwbdtEvb3zzWbR1KSlowLt28Sl30vm7WyWymSAK1iEbqzrYRks2Wetp7YQ==}
+  '@pnpm/lockfile.fs@1100.2.3':
+    resolution: {integrity: sha512-8gw4gf9uHAdOSPGYLsCOhzQ6T9IEFTIpZ0zwXp+YmPJRpgwXm7HG6oYO4cJalVEfA8jYKhqQ02yLrv2JNXvc/g==}
     engines: {node: '>=22.13'}
     peerDependencies:
       '@pnpm/logger': ^1100.0.0
 
-  '@pnpm/lockfile.merger@1100.0.19':
-    resolution: {integrity: sha512-f5Ru2UfFxFi0/Bm4k40PG98plC60U+5adTZKKrYuaevpWxSAykxVCtP2XuS6SOc0LJ6YYaaaqW9Q82u9WUFNSw==}
+  '@pnpm/lockfile.merger@1100.0.20':
+    resolution: {integrity: sha512-nYYEXJnCXtuim02z2yJ+mivJMho3G7iIBxNQINR6TZ66AtR2VHCdekZh2zGkODGxWPYBW3AhC7GqYYFc4DaeVQ==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/lockfile.types@1100.0.19':
-    resolution: {integrity: sha512-aGfowxMEG5r3kBA17JD9ZYmLrq8edKNl5aR10S1/5ebmNfCYvstaCH9Bh7U5AEvCwJREXp3i1vRt8rGsmDjYPQ==}
+  '@pnpm/lockfile.types@1100.0.20':
+    resolution: {integrity: sha512-1nSWfBDvR1uzoKp7SaO+cgBJejO8DI18OqTrB5ugzgAWvViGnLGgkQk+sMHw/DOW5ChKOQ4ot2SEnQCfMxpC9A==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/lockfile.utils@1101.1.0':
-    resolution: {integrity: sha512-98O9GDf++r4h+WWB3rmKOv5cWZSD5pURbJf0QGguwZWuTwDUuMDigtejT2gY+OJQomoE15hdcN8I7ueQPYsdyg==}
+  '@pnpm/lockfile.utils@1102.0.0':
+    resolution: {integrity: sha512-GjJi2mn53RxpxNs9CB0ZocT+CdtwqgTND9ZLxvdj2TJ2MIXD1my16eaGmxL2cMBgdziPHidE0MIQs61OCjQt1w==}
     engines: {node: '>=22.13'}
 
   '@pnpm/logger@1100.0.0':
@@ -295,20 +295,20 @@ packages:
   '@pnpm/ramda@0.28.1':
     resolution: {integrity: sha512-zcAG+lvU0fMziNeGXpPyCyCJYp5ZVrPElEE4t14jAmViaihohocZ+dDkcRIyAomox8pQsuZnv1EyHR+pOhmUWw==}
 
-  '@pnpm/resolving.resolver-base@1101.1.0':
-    resolution: {integrity: sha512-QKVY738e16fn7/A8AlY8YG/kGloPkwnqDTsC8N6f9wHD8t6/vr3W4ouroLzWtiRv2lY/PqCUAC3nYyng/GI+Qg==}
+  '@pnpm/resolving.resolver-base@1101.1.1':
+    resolution: {integrity: sha512-306yAbFEvqFl+6PZf9K3sbl4DtV8Yej9jPixrSA7HTdlxIasQih3+b9tMaWg519IuzcFGX62VRbqeSs8zfOJWA==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/resolving.tarball-url@1100.0.1':
-    resolution: {integrity: sha512-6LTJYB1l7VZIhFCSoEQKcrpW3xnyScAfJfukDBw5qAKTabehFsR+uwTM2mrLzsLMfXiJcRmAeFfJCQIwr7pamg==}
+  '@pnpm/resolving.tarball-url@1101.0.0':
+    resolution: {integrity: sha512-tlA74PFCSaAy1FfmrZt87g7y5fySr5bHpas+ht8CFrsxbnIy0NWulKefdpp+2GVXGSXLuHNAbW0T8QThIlI8yw==}
     engines: {node: '>=22.13'}
 
   '@pnpm/store.cafs-types@1100.0.2':
     resolution: {integrity: sha512-eoD3eIkNsEwqUXq47Yc2RoRHpUyv0IDEdhrn5d8m/8l2sw9PRDCFBTPM76WPZ6nRfEN09ArsAAfihzZ96iEaIA==}
     engines: {node: '>=22.13'}
 
-  '@pnpm/types@1101.9.0':
-    resolution: {integrity: sha512-lB2aSB2h950UX1GX3JW4AZ86xjXD92YJbV92IBSQqHXXZdiemoVKADLA2cDQ4/wKeS7djY8fkITM6X+6iYF62A==}
+  '@pnpm/types@1102.0.0':
+    resolution: {integrity: sha512-mgR291P+TGABUzGifQyZyU+EE0lBSTGJ87C5J95Ez2XRFlfcH/9GIN5n2saIgzXQAiyoeFSlEVEiXeEIJy+B3A==}
     engines: {node: '>=22.13'}
 
   '@pnpm/util.lex-comparator@4.0.1':
@@ -543,8 +543,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  baseline-browser-mapping@2.11.14:
-    resolution: {integrity: sha512-JyJ954WzuIR8/FFzX0o5krdSTrBAkcCSRfWSleRsIHSWV+cZe2FI1PKggVkFke1hBldRs+LRxUczzE9iPmgZww==}
+  baseline-browser-mapping@2.11.18:
+    resolution: {integrity: sha512-1iEmLEYSiE1SeBoAfPo/Mnx3PzfzHUkDK61ASkCpuk3YXugYLH5DYK1SzqV55F8FMI6s0F+/tCP7Polz1QRjxw==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -604,12 +604,12 @@ packages:
     resolution: {integrity: sha512-4pxiLt2bXHe5BDrolTJs9wfwwT0pPQPQxeUj+X6SKTCkpi8VwvOvgMzohTVVDLXHmAjrZuKEq+tyb0C5zzTSxw==}
     engines: {node: '>=22.13'}
 
-  conventional-changelog-angular@9.3.0:
-    resolution: {integrity: sha512-0MWQLVUT1oVCsUGs9aAWteBVxPlLwJTn5VbQH7B0B3fDizZgrJ9QGnKl/2mp1+5P7153GCBCjO/v1aKJ6eysCg==}
+  conventional-changelog-angular@9.4.0:
+    resolution: {integrity: sha512-HdxRxuS8bBXVIuo4V82gvSwAXT0vYQUizrjs/izmPg5JdDstr8v8I5hduGL3iQbG+o310dUDxC4+LetuS5hu9w==}
     engines: {node: '>=22'}
 
-  conventional-changelog-conventionalcommits@10.3.0:
-    resolution: {integrity: sha512-qag0zFD867Qq1DK0jAWicyWlEMS1FFC/BLVLISaoeI7Y6Em6aWchk7BCkhOTsecRpMsV6qX41XmlNnghiiTmSw==}
+  conventional-changelog-conventionalcommits@10.4.0:
+    resolution: {integrity: sha512-Rriac6ZrAlVm6cy9Bz4NSp+WMHpwNXoPIYex+HjCgduAVUSbnew29DQjQw0C4g9u3HtSYzGiGY+pdBXAZo+4aA==}
     engines: {node: '>=22'}
 
   conventional-commits-parser@7.1.2:
@@ -679,8 +679,8 @@ packages:
     resolution: {integrity: sha512-EjePK1srD3P08o2j4f0ExnylqRs5B9tJjcp9t1krH2qRi8CCdsYfwe9JgSLurFBWwq4uOlipzfk5fHNvwFKr8Q==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
-  electron-to-chromium@1.5.408:
-    resolution: {integrity: sha512-SLoprcYpJ/OH2v2ps0+N5biv9H4/KBT3+YmmDew64TwK5y9j2wv7pMOFY7IorVkyMtEyLSCRlXKLsNlakeAlPw==}
+  electron-to-chromium@1.5.412:
+    resolution: {integrity: sha512-z4rMe3esBzlzovKHj4gxJnsCGZRK5l4baUvm+gCGJBPE+gsyUMKsuU9tnEUtI1dOebXz1ytAPGjvXhmQ7rIPwA==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -755,8 +755,8 @@ packages:
     peerDependencies:
       eslint: '>=9.29.0'
 
-  eslint-plugin-jsonc@3.4.1:
-    resolution: {integrity: sha512-HHWkjAmVJ3QAffCkfo0XKl3CstLtgbIu5EGfFfVDLQT6vqPrxl4pFbUwFwY03nOlvyuDiiBixhHFrlbzn9u09Q==}
+  eslint-plugin-jsonc@3.4.2:
+    resolution: {integrity: sha512-q5xzjCYFQuhFomTbctXzd3STfDJ8XduvaigjQmMEbP2gzSKrc58y3Fv6D775/cIK1/sRUn+4kpljiU2iW8k0zw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     peerDependencies:
       eslint: '>=9.38.0'
@@ -914,8 +914,8 @@ packages:
   fast-safe-stringify@2.1.1:
     resolution: {integrity: sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==}
 
-  fast-uri@3.1.5:
-    resolution: {integrity: sha512-gHwA1O9LDIcKunMKhObS/HimwtehO1nPUECKAu5TpKgaO19fcWEl4bliWe1jWxVFvIXztJjjQ4L8XQ1EU9f7Jw==}
+  fast-uri@3.1.6:
+    resolution: {integrity: sha512-7Ical1vFEMr0onbVzEDIreM22I4khW+fzyQPwvAFWBp1iwdshSZRsL4jjRvPG9JP1uiqMHRto+YU6R2/CzDz5Q==}
 
   fdir@6.5.0:
     resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
@@ -1083,8 +1083,8 @@ packages:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
-  jsdoc-type-pratt-parser@9.1.1:
-    resolution: {integrity: sha512-kojSbQb9iQM2bk2PmHiKa3reG0U4v2gN9U8D8+eCQq+4KM5ZXBUyBVeF8KmR0RiwqyrW4+uVWYWTOLnpsavnkw==}
+  jsdoc-type-pratt-parser@9.1.2:
+    resolution: {integrity: sha512-9EXymowgk1mb9RY1VxuwKc+AhaxfBk2CV0dWxgGM+l5RURTtiUoAx7MlKwcsiVcEXK5HEPa7FeH/tsRpqjEPRg==}
     engines: {node: ^22.22.2 || >=24.15.0}
 
   jsesc@3.1.0:
@@ -1674,7 +1674,7 @@ snapshots:
   '@commitlint/config-conventional@21.2.2':
     dependencies:
       '@commitlint/types': 21.2.0
-      conventional-changelog-conventionalcommits: 10.3.0
+      conventional-changelog-conventionalcommits: 10.4.0
 
   '@commitlint/config-validator@21.2.0':
     dependencies:
@@ -1725,7 +1725,7 @@ snapshots:
   '@commitlint/parse@21.2.2':
     dependencies:
       '@commitlint/types': 21.2.0
-      conventional-changelog-angular: 9.3.0
+      conventional-changelog-angular: 9.4.0
       conventional-commits-parser: 7.1.2
 
   '@commitlint/read@21.2.1(conventional-commits-parser@7.1.2)':
@@ -1772,11 +1772,11 @@ snapshots:
     optionalDependencies:
       conventional-commits-parser: 7.1.2
 
-  '@conventional-changelog/template@1.3.0': {}
+  '@conventional-changelog/template@1.4.0': {}
 
   '@escapace/pnpm-pack@0.9.2(@pnpm/logger@1100.0.0)':
     dependencies:
-      '@pnpm/lockfile.fs': 1100.2.2(@pnpm/logger@1100.0.0)
+      '@pnpm/lockfile.fs': 1100.2.3(@pnpm/logger@1100.0.0)
       archiver: 8.0.0
       arg: 5.0.2
       es-toolkit: 1.51.0
@@ -1856,60 +1856,60 @@ snapshots:
 
   '@pkgr/core@0.3.6': {}
 
-  '@pnpm/config.normalize-registries@1100.1.0':
+  '@pnpm/config.normalize-registries@1101.0.0':
     dependencies:
-      '@pnpm/constants': 1101.0.0
-      '@pnpm/types': 1101.9.0
+      '@pnpm/constants': 1102.0.0
+      '@pnpm/types': 1102.0.0
       normalize-registry-url: 2.0.1
       ramda: '@pnpm/ramda@0.28.1'
 
-  '@pnpm/constants@1101.0.0': {}
+  '@pnpm/constants@1102.0.0': {}
 
   '@pnpm/crypto.hash@1100.0.2':
     dependencies:
       '@pnpm/fs.graceful-fs': 1100.1.1
       ssri: 13.0.1
 
-  '@pnpm/deps.path@1100.1.0':
+  '@pnpm/deps.path@1101.0.0':
     dependencies:
       '@pnpm/crypto.hash': 1100.0.2
-      '@pnpm/types': 1101.9.0
+      '@pnpm/types': 1102.0.0
       semver: 7.8.5
 
-  '@pnpm/error@1100.1.2':
+  '@pnpm/error@1100.1.3':
     dependencies:
-      '@pnpm/constants': 1101.0.0
+      '@pnpm/constants': 1102.0.0
 
-  '@pnpm/fetching.fetcher-base@1100.2.7':
+  '@pnpm/fetching.fetcher-base@1100.2.8':
     dependencies:
-      '@pnpm/resolving.resolver-base': 1101.1.0
-      '@pnpm/types': 1101.9.0
+      '@pnpm/resolving.resolver-base': 1101.1.1
+      '@pnpm/types': 1102.0.0
       '@types/ssri': 7.1.5
 
   '@pnpm/fs.graceful-fs@1100.1.1':
     dependencies:
       graceful-fs: 4.2.11
 
-  '@pnpm/hooks.types@1100.2.6':
+  '@pnpm/hooks.types@1101.0.0':
     dependencies:
-      '@pnpm/fetching.fetcher-base': 1100.2.7
-      '@pnpm/lockfile.types': 1100.0.19
-      '@pnpm/resolving.resolver-base': 1101.1.0
+      '@pnpm/fetching.fetcher-base': 1100.2.8
+      '@pnpm/lockfile.types': 1100.0.20
+      '@pnpm/resolving.resolver-base': 1101.1.1
       '@pnpm/store.cafs-types': 1100.0.2
-      '@pnpm/types': 1101.9.0
+      '@pnpm/types': 1102.0.0
 
-  '@pnpm/lockfile.fs@1100.2.2(@pnpm/logger@1100.0.0)':
+  '@pnpm/lockfile.fs@1100.2.3(@pnpm/logger@1100.0.0)':
     dependencies:
-      '@pnpm/constants': 1101.0.0
-      '@pnpm/deps.path': 1100.1.0
-      '@pnpm/error': 1100.1.2
-      '@pnpm/lockfile.merger': 1100.0.19
-      '@pnpm/lockfile.types': 1100.0.19
-      '@pnpm/lockfile.utils': 1101.1.0
+      '@pnpm/constants': 1102.0.0
+      '@pnpm/deps.path': 1101.0.0
+      '@pnpm/error': 1100.1.3
+      '@pnpm/lockfile.merger': 1100.0.20
+      '@pnpm/lockfile.types': 1100.0.20
+      '@pnpm/lockfile.utils': 1102.0.0
       '@pnpm/logger': 1100.0.0
       '@pnpm/network.git-utils': 1100.0.3
       '@pnpm/object.key-sorting': 1100.0.2
-      '@pnpm/types': 1101.9.0
+      '@pnpm/types': 1102.0.0
       '@zkochan/rimraf': 4.0.0
       comver-to-semver: 2.0.0
       js-yaml: '@zkochan/js-yaml@0.0.11'
@@ -1919,31 +1919,31 @@ snapshots:
       strip-bom: 5.0.0
       write-file-atomic: 7.0.1
 
-  '@pnpm/lockfile.merger@1100.0.19':
+  '@pnpm/lockfile.merger@1100.0.20':
     dependencies:
-      '@pnpm/lockfile.types': 1100.0.19
-      '@pnpm/types': 1101.9.0
+      '@pnpm/lockfile.types': 1100.0.20
+      '@pnpm/types': 1102.0.0
       comver-to-semver: 2.0.0
       ramda: '@pnpm/ramda@0.28.1'
       semver: 7.8.5
 
-  '@pnpm/lockfile.types@1100.0.19':
+  '@pnpm/lockfile.types@1100.0.20':
     dependencies:
       '@pnpm/patching.types': 1100.0.1
-      '@pnpm/resolving.resolver-base': 1101.1.0
-      '@pnpm/types': 1101.9.0
+      '@pnpm/resolving.resolver-base': 1101.1.1
+      '@pnpm/types': 1102.0.0
 
-  '@pnpm/lockfile.utils@1101.1.0':
+  '@pnpm/lockfile.utils@1102.0.0':
     dependencies:
-      '@pnpm/config.normalize-registries': 1100.1.0
-      '@pnpm/constants': 1101.0.0
-      '@pnpm/deps.path': 1100.1.0
-      '@pnpm/error': 1100.1.2
-      '@pnpm/hooks.types': 1100.2.6
-      '@pnpm/lockfile.types': 1100.0.19
-      '@pnpm/resolving.resolver-base': 1101.1.0
-      '@pnpm/resolving.tarball-url': 1100.0.1
-      '@pnpm/types': 1101.9.0
+      '@pnpm/config.normalize-registries': 1101.0.0
+      '@pnpm/constants': 1102.0.0
+      '@pnpm/deps.path': 1101.0.0
+      '@pnpm/error': 1100.1.3
+      '@pnpm/hooks.types': 1101.0.0
+      '@pnpm/lockfile.types': 1100.0.20
+      '@pnpm/resolving.resolver-base': 1101.1.1
+      '@pnpm/resolving.tarball-url': 1101.0.0
+      '@pnpm/types': 1102.0.0
       ramda: '@pnpm/ramda@0.28.1'
 
   '@pnpm/logger@1100.0.0':
@@ -1964,15 +1964,17 @@ snapshots:
 
   '@pnpm/ramda@0.28.1': {}
 
-  '@pnpm/resolving.resolver-base@1101.1.0':
+  '@pnpm/resolving.resolver-base@1101.1.1':
     dependencies:
-      '@pnpm/types': 1101.9.0
+      '@pnpm/types': 1102.0.0
 
-  '@pnpm/resolving.tarball-url@1100.0.1': {}
+  '@pnpm/resolving.tarball-url@1101.0.0':
+    dependencies:
+      '@pnpm/types': 1102.0.0
 
   '@pnpm/store.cafs-types@1100.0.2': {}
 
-  '@pnpm/types@1101.9.0': {}
+  '@pnpm/types@1102.0.0': {}
 
   '@pnpm/util.lex-comparator@4.0.1': {}
 
@@ -2142,14 +2144,14 @@ snapshots:
   ajv@8.18.0:
     dependencies:
       fast-deep-equal: 3.1.3
-      fast-uri: 3.1.5
+      fast-uri: 3.1.6
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
   ajv@8.20.0:
     dependencies:
       fast-deep-equal: 3.1.3
-      fast-uri: 3.1.5
+      fast-uri: 3.1.6
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
@@ -2218,7 +2220,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  baseline-browser-mapping@2.11.14: {}
+  baseline-browser-mapping@2.11.18: {}
 
   bole@5.0.29:
     dependencies:
@@ -2233,9 +2235,9 @@ snapshots:
 
   browserslist@4.28.8:
     dependencies:
-      baseline-browser-mapping: 2.11.14
+      baseline-browser-mapping: 2.11.18
       caniuse-lite: 1.0.30001809
-      electron-to-chromium: 1.5.408
+      electron-to-chromium: 1.5.412
       node-releases: 2.0.53
       update-browserslist-db: 1.3.1(browserslist@4.28.8)
 
@@ -2274,13 +2276,13 @@ snapshots:
 
   comver-to-semver@2.0.0: {}
 
-  conventional-changelog-angular@9.3.0:
+  conventional-changelog-angular@9.4.0:
     dependencies:
-      '@conventional-changelog/template': 1.3.0
+      '@conventional-changelog/template': 1.4.0
 
-  conventional-changelog-conventionalcommits@10.3.0:
+  conventional-changelog-conventionalcommits@10.4.0:
     dependencies:
-      '@conventional-changelog/template': 1.3.0
+      '@conventional-changelog/template': 1.4.0
 
   conventional-commits-parser@7.1.2:
     dependencies:
@@ -2334,7 +2336,7 @@ snapshots:
 
   diff-sequences@29.6.3: {}
 
-  electron-to-chromium@1.5.408: {}
+  electron-to-chromium@1.5.412: {}
 
   emoji-regex@10.6.0: {}
 
@@ -2367,7 +2369,7 @@ snapshots:
       eslint-plugin-baseline-js: 0.7.1(eslint@10.8.1(jiti@2.6.1))
       eslint-plugin-de-morgan: 2.1.3(eslint@10.8.1(jiti@2.6.1))
       eslint-plugin-depend: 1.5.0(eslint@10.8.1(jiti@2.6.1))
-      eslint-plugin-jsonc: 3.4.1(eslint@10.8.1(jiti@2.6.1))
+      eslint-plugin-jsonc: 3.4.2(eslint@10.8.1(jiti@2.6.1))
       eslint-plugin-math: 0.13.1(eslint@10.8.1(jiti@2.6.1))
       eslint-plugin-perfectionist: 5.10.1(eslint@10.8.1(jiti@2.6.1))(typescript@6.0.3)
       eslint-plugin-regexp: 3.2.0(eslint@10.8.1(jiti@2.6.1))
@@ -2417,7 +2419,7 @@ snapshots:
       eslint: 10.8.1(jiti@2.6.1)
       eslint-type-tracer: 0.5.2(eslint@10.8.1(jiti@2.6.1))
 
-  eslint-plugin-jsonc@3.4.1(eslint@10.8.1(jiti@2.6.1)):
+  eslint-plugin-jsonc@3.4.2(eslint@10.8.1(jiti@2.6.1)):
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.8.1(jiti@2.6.1))
       '@eslint/core': 1.2.1
@@ -2453,7 +2455,7 @@ snapshots:
       '@eslint-community/regexpp': 4.12.2
       comment-parser: 1.4.8
       eslint: 10.8.1(jiti@2.6.1)
-      jsdoc-type-pratt-parser: 9.1.1
+      jsdoc-type-pratt-parser: 9.1.2
       refa: 0.12.1
       regexp-ast-analysis: 0.7.1
       scslre: 0.3.0
@@ -2657,7 +2659,7 @@ snapshots:
 
   fast-safe-stringify@2.1.1: {}
 
-  fast-uri@3.1.5: {}
+  fast-uri@3.1.6: {}
 
   fdir@6.5.0(picomatch@4.0.5):
     optionalDependencies:
@@ -2784,7 +2786,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jsdoc-type-pratt-parser@9.1.1:
+  jsdoc-type-pratt-parser@9.1.2:
     dependencies:
       '@types/estree': 1.0.9
 
