@@ -16,11 +16,11 @@
     "@ls-lint/ls-lint": "2.3.1",
     "eslint": "10.10.0",
     "eslint-config-escapace": "5.20.4",
-    "lefthook": "2.1.12",
-    "prettier": "3.9.6",
+    "lefthook": "2.1.14",
+    "prettier": "3.9.7",
     "prettier-config-escapace": "1.2.2",
     "syncpack": "15.3.3",
-    "tstyche": "7.2.4",
+    "tstyche": "7.2.5",
     "typescript": "6.0.3"
   },
   "devEngines": {
